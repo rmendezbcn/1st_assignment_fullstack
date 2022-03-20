@@ -26,11 +26,15 @@
   }
 }
 
-body {
+body,
+html {
   font-family: fantasy;
   font-size: 14;
   font-weight: 400;
   color: #555;
+
+  height: 100%;
+  margin: 0px;
 
   --blue: #007bff;
   --indigo: #6610f2;
@@ -47,47 +51,85 @@ body {
 
 .parallax {
   background-image: url("./images/parallax_2.jpeg");
-  height: auto;
   background-color: transparent;
-  overflow: auto;
+  height: 100%;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
+
 section {
-  margin: 4rem 0 4rem 0;
-}
-section div .parallax {
-  margin: 0px;
-  padding: 0px;
+  /*margin: 4rem 0 4rem 0;*/
+  padding: 3rem 0 3rem 0;
 }
 
-.parallax,
-h1,
-h4,
-span {
-  font-size: 2.5rem;
+section div.parallax {
+  margin: 0px;
+  padding: 0px;
+  height: 100%;
+}
+.entry {
+  font-size: 1.5rem;
   color: white;
   text-transform: uppercase;
   margin: 0.5rem;
 }
-.container .flex-row {
+.caption {
+  font-size: 2.8rem;
+  color: white;
+  text-transform: uppercase;
+  margin: 0px;
+}
+.slogan {
+  font-size: 1rem;
+  color: white;
+  text-transform: uppercase;
+  margin: 0px;
+}
+.container .flex-row-around {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   flex-wrap: wrap;
 }
 
-.container .flex-row div {
+.container .flex-row-around div {
+  width: 25%;
   margin: 1rem;
   align-items: center;
 }
 
-.container .flex-row div img {
-  width: 580px;
+.container .flex-row-around div img {
+  width: 100%;
   height: auto;
+  overflow: hidden;
 }
+
+.container .flex-row-between {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.container .flex-row-between div {
+  width: 20%;
+  margin: 1rem;
+  align-items: center;
+}
+
+.container .flex-row-between div h3,
+.container .flex-row-between div p {
+  text-align: center;
+}
+
+.container .flex-row-between div img {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+
 @media (min-width: 992px) {
   .no-wrap {
     flex-wrap: nowrap !important;
@@ -103,4 +145,31 @@ span {
 
 .border {
   border: 1px solid #343a40;
+}
+
+.colored-section-indigo {
+  background-color: var(--indigo);
+  color: #fff;
+  padding: 3rem 0 3rem 0;
+}
+
+.colored-section-orange {
+  background-color: var(--orange);
+  color: #fff;
+  padding: 3rem 0 3rem 0;
+}
+.colored-section-pink {
+  background-color: var(--pink);
+  color: #fff;
+  padding: 3rem 0 3rem 0;
+}
+.colored-section-cyan {
+  background-color: var(--cyan);
+  color: #fff;
+  padding: 3rem 0 3rem 0;
+}
+.colored-section-dark {
+  background-color: var(--gray-dark);
+  color: #fff;
+  padding: 3rem 0 3rem 0;
 }

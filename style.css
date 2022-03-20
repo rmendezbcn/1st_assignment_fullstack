@@ -1,0 +1,196 @@
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+    margin: auto;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 750px;
+    margin: auto;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    max-width: 970px;
+    margin: auto;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 80%;
+    margin: auto;
+  }
+}
+
+body,
+html {
+  font-family: fantasy;
+  font-size: 14;
+  font-weight: 400;
+  color: #555;
+
+  height: 100%;
+  margin: 0px;
+
+  --blue: #007bff;
+  --indigo: #6610f2;
+  --pink: #e83e8c;
+  --red: #dc3545;
+  --orange: #fd7e14;
+  --yellow: #ffc107;
+  --green: #28a745;
+  --cyan: #17a2b8;
+  --white: #fff;
+  --gray: #6c757d;
+  --gray-dark: #343a40;
+}
+
+.parallax {
+  background-image: url("./images/parallax_2.jpeg");
+  height: 100%;
+  background-color: transparent;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+section {
+  margin: 0 0 5rem 0;
+  padding: 0 0 0.8rem 0;
+}
+
+.entry {
+  font-size: 1.5rem;
+  color: white;
+  text-transform: uppercase;
+  margin: 0.5rem;
+}
+.caption {
+  font-size: 2.8rem;
+  color: white;
+  text-transform: uppercase;
+  margin: 0px;
+}
+.slogan {
+  font-size: 1rem;
+  color: white;
+  text-transform: uppercase;
+  margin: 0px;
+}
+.container .flex-row-around {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.container .flex-row-around div {
+  width: 25%;
+  margin: 1rem;
+  align-items: center;
+}
+
+.container .flex-row-around div img {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+
+.container .flex-row-between {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.container .flex-row-between div {
+  width: 20%;
+  margin: 1rem;
+  align-items: center;
+}
+
+.container .flex-row-between div h3,
+.container .flex-row-between div p {
+  text-align: center;
+}
+
+.container .flex-row-between div img {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+
+@media (min-width: 992px) {
+  .no-wrap {
+    flex-wrap: nowrap !important;
+  }
+}
+.img-clipped {
+  clip-path: circle(30%);
+}
+.small-img {
+  width: 380px !important;
+  height: auto;
+}
+
+.border {
+  border: 1px solid #343a40;
+}
+
+.colored-section-indigo {
+  background-color: var(--indigo);
+  color: #fff;
+  padding: 3rem 0 3rem 0;
+}
+
+.colored-section-orange {
+  background-color: var(--orange);
+  color: #fff;
+  padding: 3rem 0 3rem 0;
+}
+.colored-section-pink {
+  background-color: var(--pink);
+  color: #fff;
+  padding: 3rem 0 3rem 0;
+}
+.colored-section-cyan {
+  background-color: var(--cyan);
+  color: #fff;
+  padding: 3rem 0 3rem 0;
+}
+.colored-section-dark {
+  background-color: var(--gray-dark);
+  color: #fff;
+  padding: 3rem 0 3rem 0;
+}
+header {
+  margin: 0px;
+  padding: 0px;
+}
+.menu {
+  text-decoration: none;
+}
+
+.menu ul {
+  list-style-type: none;
+  padding: 0.3rem;
+  margin: 0px;
+  overflow: hidden;
+  border-right: 1px solid #555;
+}
+.menu li a {
+  display: block;
+  float: left;
+  text-decoration: none;
+  text-align: center;
+  padding: 0.5rem;
+}
+
+li a:hover {
+  color: var(--green);
+}

@@ -1,0 +1,106 @@
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+    margin: auto;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 750px;
+    margin: auto;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    max-width: 970px;
+    margin: auto;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 80%;
+    margin: auto;
+  }
+}
+
+body {
+  font-family: fantasy;
+  font-size: 14;
+  font-weight: 400;
+  color: #555;
+
+  --blue: #007bff;
+  --indigo: #6610f2;
+  --pink: #e83e8c;
+  --red: #dc3545;
+  --orange: #fd7e14;
+  --yellow: #ffc107;
+  --green: #28a745;
+  --cyan: #17a2b8;
+  --white: #fff;
+  --gray: #6c757d;
+  --gray-dark: #343a40;
+}
+
+.parallax {
+  background-image: url("./images/parallax_2.jpeg");
+  height: auto;
+  background-color: transparent;
+  overflow: auto;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+section {
+  margin: 4rem 0 4rem 0;
+}
+section div .parallax {
+  margin: 0px;
+  padding: 0px;
+}
+
+.parallax,
+h1,
+h4,
+span {
+  font-size: 2.5rem;
+  color: white;
+  text-transform: uppercase;
+  margin: 0.5rem;
+}
+.container .flex-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.container .flex-row div {
+  margin: 1rem;
+  align-items: center;
+}
+
+.container .flex-row div img {
+  width: 580px;
+  height: auto;
+}
+@media (min-width: 992px) {
+  .no-wrap {
+    flex-wrap: nowrap !important;
+  }
+}
+.img-clipped {
+  clip-path: circle(30%);
+}
+.small-img {
+  width: 380px !important;
+  height: auto;
+}
+
+.border {
+  border: 1px solid #343a40;
+}

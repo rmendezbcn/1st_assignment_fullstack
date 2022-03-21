@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="myfunctions.js"></script>
+    <title>Full Stack Dev</title>
+</head>
+<body>
+    <section>
+        <div class="container">
+            <h1>Full Stack Dev Course</h1>
+            <h3>My notes</h3>
+        </div>
+        <div class="container">
+            <h2>Table of content</h2>
+            <div id="mytoc">
+
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container">
+
+            <h1 class="toc">CSS</h1>
+            
+            <h2 class="toc">Selectores</h2>
+            <ul>
+                <li><code>Sel1 sel2</code> all sel2 inside sel1</li>
+                <li><code>H1 em, h2 em</code> an em indide h1 or h2. La coma separa conjuntos de selectores.</li>
+                <li><code>.class-1 > div {}</code> el > indica que se selecciona el div hijo del elemento con clase-1.</li>
+                <li><code>.class-1 > div > p {}</code> se selecciona la p hija de un div hijo de un elemento con clase-1</li>
+                <li><code>.class-1 > div > p.enfasis {}</code> se selecciona la p con clase enfasisi hija de un div hijo de un elemento con clase-1</li>
+                <li><code>p .enfasis {}</code> selecciona cualquier elemento hijo de una p con clase énfasis. El espacio indica que puede haber cualquier
+                número de cosas dentro de la p y nos interesa la que tiene clase enfasis</li>
+                <li><code>*{}</code> el selector * selecciona todos los elementos.</li>
+            </ul>
+            
+            
+            <h2 class="toc">Absolute length units</h2>
+            <ul>
+                <li>px</li>
+                <li>cm</li>
+                <li>inches</li>
+            </ul>
+            
+            <h2 class="toc">Realtive length units</H2>
+            <ul>
+                <li>% depends on the size of the parent element</li>
+                <li><code>em</code> relative Font-size of the element</li>
+                <li><code>rem</code> relative to the Font-size of the root element- the body, regularly- (el tamaño del guión largo)</li>
+                <li><code>vm</code> viewpoprt width</li>
+                <li><code>vh</code> viewport height</li>
+            </ul>
+            
+            
+            <h2 class="toc">Colors</h2>
+            <ul>
+                <li>by name</li>
+                <li>hexadecimal de 0 a 15 están todas las potencial en una letra</li>
+                <li>hexadecimal dos letras, 256</li>
+                <li><code>hsl</code> hue (tono), saturation (fuerte), lumisnecen or lightness (luz)</li>
+            </ul>
+            
+            
+            <h2 class="toc">display </h2>
+            <ul>
+                <li><code>inline-block</code> un <code> p </code>que es una letra dentro de otra <code>p</code>. Se comportan como si estuvieran dentro de una row.</li>
+                <li><code>flex</code> para añadir dinamismo.</li>
+                <li><code>inline-flex</code> un bloque dentro de un párrafo.</li>
+                <li><code>Grid</code> más técnico para diseño.</li>
+                <li><code>Block</code> por defecto ocupa el 100% del ancho</li>
+            </ul>
+            
+            <h1 class="toc">CSS Box-model</h1>
+            <ul>
+                <li><code>margin</code> los márgenes se solapan…</li>
+                <li><code>border</code></li>
+                <li><code>padding</code></li>
+                <li><code>content</code></li>
+            </ul>
+            
+            
+        </div>
+
+    </section>
+
+
+</body>
+</html>

@@ -1,0 +1,73 @@
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+    margin: auto;
+    padding-top: 2rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 750px;
+    margin: auto;
+    padding-top: 2rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    max-width: 970px;
+    margin: auto;
+    padding-top: 2rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 80%;
+    margin: auto;
+    padding-top: 2rem;
+  }
+}
+
+body,
+html {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 14;
+  font-weight: 400;
+  color: #555;
+
+  --blue: #007bff;
+  --indigo: #6610f2;
+  --pink: #e83e8c;
+  --red: #dc3545;
+  --orange: #fd7e14;
+  --yellow: #ffc107;
+  --green: #28a745;
+  --cyan: #17a2b8;
+  --white: #fff;
+  --gray: #6c757d;
+  --gray-dark: #343a40;
+}
+section {
+  padding-bottom: 3rem;
+}
+
+code {
+  font-family: "Courier New", Courier, monospace;
+  font-size: large;
+  font-weight: 400;
+  background-color: whitesmoke;
+}
+
+code .block {
+  font-family: "Courier New", Courier, monospace;
+  font-size: large;
+  font-weight: 400;
+  background-color: whitesmoke;
+  display: block;
+}
+
+ul li {
+  line-height: 1.5rem;
+}

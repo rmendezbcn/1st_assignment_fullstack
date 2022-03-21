@@ -51,8 +51,8 @@ html {
 
 .parallax {
   background-image: url("./images/parallax_2.jpeg");
-  background-color: transparent;
   height: 100%;
+  background-color: transparent;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -60,15 +60,10 @@ html {
 }
 
 section {
-  /*margin: 4rem 0 4rem 0;*/
-  padding: 3rem 0 3rem 0;
+  margin: 0 0 5rem 0;
+  padding: 0 0 0.8rem 0;
 }
 
-section div.parallax {
-  margin: 0px;
-  padding: 0px;
-  height: 100%;
-}
 .entry {
   font-size: 1.5rem;
   color: white;
@@ -172,4 +167,30 @@ section div.parallax {
   background-color: var(--gray-dark);
   color: #fff;
   padding: 3rem 0 3rem 0;
+}
+header {
+  margin: 0px;
+  padding: 0px;
+}
+.menu {
+  text-decoration: none;
+}
+
+.menu ul {
+  list-style-type: none;
+  padding: 0.3rem;
+  margin: 0px;
+  overflow: hidden;
+  border-right: 1px solid #555;
+}
+.menu li a {
+  display: block;
+  float: left;
+  text-decoration: none;
+  text-align: center;
+  padding: 0.5rem;
+}
+
+li a:hover {
+  color: var(--green);
 }

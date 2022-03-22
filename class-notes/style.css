@@ -71,3 +71,12 @@ code .block {
 ul li {
   line-height: 1.5rem;
 }
+
+div[id="mytoc"] ul li {
+    list-style-type: none;
+}
+
+#mytoc {
+    padding: 1rem;
+    background-color: #f2f2f2;
+}

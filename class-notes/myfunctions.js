@@ -1,13 +1,20 @@
 // collecting the elements that wil showup in the TOC
 let toc = document.getElementsByClassName("toc");
 let tocLen = toc.length;
-console.log(tocLen);
 let ul = document.createElement('ul');
 
 for (let i = 0; i < tocLen; i++) {
-    let li = document.createElement('li');
-    li.innerHTML = toc[i].innerHTML;
-    console.log(li.innerHTML);
+    
+    toc[i].setAttribute('id', 'content-' + i);
+
+    let li = document.createElement('li');  
+    let a = document.createElement('a');
+    a.innerHTML = toc[i].innerHTML;
+    //console.log(a.innerHTML);
+
+    a.setAttribute('href', '#content-' + i);
+    li.appendChild(a);
+    
     ul.appendChild(li);
 }
 console.log(ul);
